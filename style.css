@@ -19,43 +19,6 @@ body{
    
 }
 
-/* it's working as menu */
-.anchor-rightheader{
-    width: 50%;
-    margin-left: 500px;
-    margin-top: -25px;
-    margin-left: 650px;
-    
-}
-
-/* working with anchor  */
-.anchor-rightheader li a{
-text-decoration: none;
-width: 50%;
-padding: 15px;
-font-size: 20px;
-color:black;
-
-}
-
-/* here working with font awesome */
-.anchor-rightheader li i{
-    padding: 15px;
-    font-size: 30px;
-    color:black;
-
-}
-
-/* desingning  whole un-order list */
-.anchor-rightheader ul{
-    list-style: none;
-    display: flex;
-    margin-right: -60px;
-    margin-top: -70px;
-}
-
-
-
 .influencer-detail{
     width: 50%;
     margin-top: 100px;
@@ -170,18 +133,17 @@ color:white;
     color: white;
     background-color: rgb(22, 22, 49);
     padding: 20px;
+    margin-left: -200px;
+    
 }
 
 /* desinging footer */
 .design{
-
+    
     border: 2px solid rgb(37, 37, 58);
     background-color:rgb(37, 37, 58);
-    border-radius: 60px;
+    border-radius: 80px;
     padding: 10px;
-    margin-left: 10px;
-
-
 }
 /* footer end */
 
@@ -191,7 +153,10 @@ color:white;
 @media only screen and (max-width:688px){
     .container{
         width: 100%;
-        margin: 4px;
+        margin: 0px;
+        overflow-x:hidden;
+        overflow-y:hidden;
+        overflow:hidden;
     }
     
 
@@ -203,7 +168,9 @@ color:white;
     .influencer-container img{
     width: 200px;
     height: 200px;
+    margin:0px;
     }
+
 
 
 .popular-container{
@@ -211,11 +178,16 @@ color:white;
     overflow: hidden;
     overflow-y: scroll;
     width: 100%;
-    
-
-  
 }
 
+.footer{
+    width: 100%;
+    margin:0px;
+}
+
+.product-more{
+    margin: 0px;
+}
 .analysis{
     grid-template-columns:repeat(1, 1fr);
     flex-direction: column;
@@ -224,7 +196,7 @@ color:white;
 }
 
 .sales-img img{
-    margin-left: 4px;
+    margin-left: 0px;
 }
 
 
@@ -237,7 +209,10 @@ color:white;
 @media only screen and (min-width:688px) and (max-width:992px){
     .container{
         width: 100%;
-        margin: 4px;
+        margin: 0px;
+        overflow-x:hidden;
+        overflow-y:hidden;
+        overflow:hidden;
     }
     
 
@@ -249,18 +224,26 @@ color:white;
     .influencer-container img{
     width: 200px;
     height: 200px;
+    margin:0px;
     }
+
 
 
 .popular-container{
     grid-template-columns:repeat(2, 1fr);
     overflow: hidden;
     overflow-y: scroll;
-    
-
-  
+    width: 100%;
 }
 
+.footer{
+    width: 100%;
+    margin:0px;
+}
+
+.product-more{
+    margin: 0px;
+}
 .analysis{
     grid-template-columns:repeat(1, 1fr);
     flex-direction: column;
@@ -269,8 +252,9 @@ color:white;
 }
 
 .sales-img img{
-    margin-left: 4px;
+    margin-left: 0px;
 }
+
 
 
    
