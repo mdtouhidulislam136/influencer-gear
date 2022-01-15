@@ -1,0 +1,276 @@
+/* google front imported*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body{
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* main container that maintaining most of the  section */
+.container{
+    margin-top: 100px;
+    margin-left: 200px;
+}
+
+/* title of infuencer gear */
+.header-left{
+    width: 50%;
+   
+}
+
+/* it's working as menu */
+.anchor-rightheader{
+    width: 50%;
+    margin-left: 500px;
+    margin-top: -25px;
+    margin-left: 650px;
+    
+}
+
+/* working with anchor  */
+.anchor-rightheader li a{
+text-decoration: none;
+width: 50%;
+padding: 15px;
+font-size: 20px;
+color:black;
+
+}
+
+/* here working with font awesome */
+.anchor-rightheader li i{
+    padding: 15px;
+    font-size: 30px;
+    color:black;
+
+}
+
+/* desingning  whole un-order list */
+.anchor-rightheader ul{
+    list-style: none;
+    display: flex;
+    margin-right: -60px;
+    margin-top: -70px;
+}
+
+
+
+.influencer-detail{
+    width: 50%;
+    margin-top: 100px;
+}
+
+/* designing button */
+.influencer-detail button{
+background-color:#E02C6D;
+border:1px solid #E02C6D;
+border-radius: 10px;
+padding: 5px;
+color:white;
+}
+
+/* hover img*/
+.first-img:hover img{
+    width: 475px;
+    height: 475px;
+    transform:scale(1) skew(-360deg);
+    transition: transform 5s ease-in-out;
+   
+}
+
+/* hover img design */
+.first-img{
+    width: 50%;
+    margin-left: 200px;
+    margin-top: -20px;
+  
+}
+
+
+
+/* main .influencer-container where worked with all popular collection */
+.influencer-container{
+    display: flex;
+}
+
+
+
+.product-title{
+    text-align: center;
+    margin-right: 400px;
+    
+}
+
+/* this container dividing columns to grid and every grid 1fr and 3 column in row*/
+.popular-container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    width: 1047px;
+    height: 1662px;
+    margin-top: 10px;
+}
+
+/* worked with container brodar */
+.popular-bordar{
+    border: 5px solid whitesmoke;
+    background: whitesmoke;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* fixing the sales item or product img  */
+.popular-container.popular-bordar img{
+    width: 329px;
+    height: 476px;
+}
+
+.fa-star.filled{
+    color: orange;
+}
+
+.fa-star.empty{
+    color:bisque;
+}
+
+.product-more{
+    margin-left: 990px;
+    margin-top: 80px;
+    color:#E02C6D;
+}
+
+.analysis{
+    display:flex;
+}
+
+.sales-img img{
+
+    width: 500px;
+    height: 500px;
+    margin-bottom: 100px;
+    margin-left: -200px;
+}
+.sales-img{
+    width: 50%;
+}
+
+.reporting-analysis{
+    width: 50%;
+    margin-top: 90px;
+    margin-left: 60px;
+    margin-right: 200px;
+}
+
+/* footer start */
+.footer{
+    text-align:center;
+    color: white;
+    background-color: rgb(22, 22, 49);
+    padding: 20px;
+}
+
+/* desinging footer */
+.design{
+
+    border: 2px solid rgb(37, 37, 58);
+    background-color:rgb(37, 37, 58);
+    border-radius: 60px;
+    padding: 10px;
+    margin-left: 10px;
+
+
+}
+/* footer end */
+
+
+/* working with media query */
+/* Mobile device */
+@media only screen and (max-width:688px){
+    .container{
+        width: 100%;
+        margin: 4px;
+    }
+    
+
+    .influencer-container {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .influencer-container img{
+    width: 200px;
+    height: 200px;
+    }
+
+
+.popular-container{
+    grid-template-columns:repeat(1, 1fr);
+    overflow: hidden;
+    overflow-y: scroll;
+    
+
+  
+}
+
+.analysis{
+    grid-template-columns:repeat(1, 1fr);
+    flex-direction: column;
+   
+  
+}
+
+.sales-img img{
+    margin-left: 4px;
+}
+
+
+
+
+   
+}
+
+/* tablet device media queiry */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+        margin: 4px;
+    }
+    
+
+    .influencer-container {
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .influencer-container img{
+    width: 200px;
+    height: 200px;
+    }
+
+
+.popular-container{
+    grid-template-columns:repeat(2, 1fr);
+    overflow: hidden;
+    overflow-y: scroll;
+    
+
+  
+}
+
+.analysis{
+    grid-template-columns:repeat(1, 1fr);
+    flex-direction: column;
+   
+  
+}
+
+.sales-img img{
+    margin-left: 4px;
+}
+
+
+   
+}
